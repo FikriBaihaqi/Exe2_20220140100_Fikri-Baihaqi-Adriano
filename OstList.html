@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samehadaku - Anime Streaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .anime-card {
+            margin-bottom: 20px;
+        }
+        img.samehadaku-logo {
+            max-width: 300px;
+            height: auto;
+        }
+        .title-text {
+            color: #1d519a;
+        }
+        .btn-primary {
+            background-color: #1d519a;
+            border-color: #1d519a;
+        }
+        .btn-primary:hover {
+            background-color: #0f2d5c;
+            border-color: #0f2d5c;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+        footer .text-light {
+            color: #fff;
+        }
+        .container-py4-bg {
+            background-color: #f0f0f0;
+        }
+        /* Penambahan CSS untuk ukuran gambar dan tampilan link musik */
+        .card {
+            margin-bottom: 20px;
+        }
+        .link-audio {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Custom CSS untuk warna tombol carousel */
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: black;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            color: black;
+            opacity: 0.7;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Samehadaku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="OstList.html">OST List</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="Comedy.html">Comedy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-text">
+                <span id="real-time-clock"></span>
+            </div>
+        </div>
+    </nav>
+     
+
+<div class="container-fluid text-center mt-3" style="background-color: #1d519a;">
+    <img src="https://www.seekpng.com/png/full/143-1430217_samehadaku-samehadaku-samehadaku-tv.png" alt="Samehadaku Logo" class="img-fluid samehadaku-logo">
+</div>
+
+<section class="video" id="Video">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="text-vidio">
+                    <h2> Anime Music Video</h2>
+                    <p>AMV</p>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9rVKos-oGnQ?si=w_-beuxrdF32Y6mi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XjHqfhOcK_0?si=g9u9kF8ocBhVqrOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/CID-sYQNCew?si=AQPHjQeYfQ3VhfMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Audio" id="Audio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="row-textaudio">
+                <h4> Anime</h4>
+                <p class="text-muted lead"> TopList Soundtrack</p>
+            </div>
+            <div class="row-Audio">
+                <div class="Link-audio">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 link-audio">
+                            <h6>Bleach</h6>
+                            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150"
+                             style="width:100%;max-width:100%;overflow:hidden;background:transparent;" 
+                             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                             src="https://embed.music.apple.com/id/album/change/1537419723?i=1537419724"></iframe>
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-audio">
+                            <h6>Naruto</h6>
+                            <iframe allow="autoplay *; encrypted-media *;" 
+                            frameborder="0" height="150" style="width:100%;max-width:100%;overflow:hidden;background:transparent;" 
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                            src="https://embed.music.apple.com/id/album/wind/1536226793?i=1536226794"></iframe>
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-audio">
+                            <h6>Hunter X Hunter</h6>
+                            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
+                            style="width:100%;max-width:100%;overflow:hidden;background:transparent;" 
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                            src="https://embed.music.apple.com/id/album/hyouriittai/1610580998?i=1610581217"></iframe>
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-audio">
+                            <h6>Kimi No Nawa</h6>
+                            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
+                            style="width:100%;max-width:100%;overflow:hidden;background:transparent;" 
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                            src="https://embed.music.apple.com/id/album/sparkle-movie-ver/1434005560?i=1434005924"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center py-3">
+                    <h3>Kontak Kami</h3>
+                    <p>Email: apace@samehadaku.com</p>
+                    <p>Phone: +62 87773238100</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-center py-3">
+                    <h3>Alamat</h3>
+                    <p>Angkringan Isekai, Jl. A. Yani No.392, Krajan, Baledono, Kec. Purworejo, Kabupaten Purworejo, Jawa Tengah 54118</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="text-center py-3">
+                    <p>Copyright &copy; 2077 Samehadaku</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function updateClock() {
+        var now = new Date();
+        var clock = document.getElementById('real-time-clock');
+        clock.textContent = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+        setTimeout(updateClock, 1000);
+    }
+    updateClock();
+</script>
+</body>
+</html>

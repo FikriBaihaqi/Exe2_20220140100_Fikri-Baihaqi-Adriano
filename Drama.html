@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samehadaku - Anime Streaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .anime-card {
+            margin-bottom: 20px;
+        }
+        img.samehadaku-logo {
+            max-width: 300px;
+            height: auto;
+        }
+        .title-text {
+            color: #1d519a;
+        }
+        .btn-primary {
+            background-color: #1d519a;
+            border-color: #1d519a;
+        }
+        .btn-primary:hover {
+            background-color: #0f2d5c;
+            border-color: #0f2d5c;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+        footer .text-light {
+            color: #fff;
+        }
+        .container-py4-bg {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Samehadaku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="OstList.html">OST List</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="Drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="Comedy.html">Comedy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-text">
+                <span id="real-time-clock"></span>
+            </div>
+        </div>
+    </nav>
+    
+<div class="container-fluid text-center mt-3" style="background-color: #1d519a;">
+    <img src="https://www.seekpng.com/png/full/143-1430217_samehadaku-samehadaku-samehadaku-tv.png" alt="Samehadaku Logo" class="img-fluid samehadaku-logo">
+</div>
+
+<section class="Gambar" id="Gambar">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Genre Drama</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://preview.redd.it/violet-evergarden-the-movie-selfmade-poster-v0-lpxvc0awqbw81.jpg?width=640&crop=smart&auto=webp&s=cc2f515ba4fca13016220b2e4be7ee69f466f223" class="card-img-top" alt="VE">
+                    <div class="card-body">
+                        <h5 class="card-title">Violet Evergarden</h5>
+                        <p class="card-text">Perang Besar akhirnya berakhir setelah empat tahun konflik yang panjang; terpecah menjadi dua, benua Telesis perlahan mulai berkembang sekali lagi. Terjebak dalam pertumpahan darah adalah Violet Evergarden, seorang gadis muda yang dibesarkan dengan tujuan menghancurkan garis musuh. Dirawat di rumah sakit dan menjadi cacat dalam pertempuran berdarah selama pertandingan terakhir Perang, dia ditinggalkan hanya dengan kata-kata dari orang yang dia sayangi, tetapi tidak mengerti artinya.
+
+                            Pulih dari luka-lukanya, Violet memulai hidup baru dengan bekerja di CH Postal Services setelah berselisih dengan keluarga wali barunya. Di sana, dia secara kebetulan menyaksikan karya “Boneka Memori Otomatis,” amanuenses yang menuliskan pikiran dan perasaan orang menjadi kata-kata di
+                            atas kertas. Tergerak oleh gagasan tersebut, Violet mulai bekerja sebagai Boneka Memori Otomatis, perdagangan yang akan membawanya pada petualangan, yang akan membentuk kembali kehidupan kliennya dan mudah-mudahan mengarah pada penemuan diri.</p>
+                            <a href="survey.html" class="btn btn-primary mt-3">Isi Survey</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" class="card-img-top" alt="SnF">
+                        <div class="card-body">
+                            <h5 class="card-title">Sousou no Frieren</h5>
+                            <p class="card-text">Raja iblis telah dikalahkan, dan kelompok pahlawan yang menang kembali ke rumah sebelum bubar. Keempatnya penyihir Frieren, pahlawan Himmel, pendeta Heiter, dan prajurit Eisen mengenang perjalanan mereka selama satu dekade saat momen untuk saling mengucapkan selamat tinggal tiba. Namun berlalunya waktu berbeda bagi para elf, sehingga Frieren menyaksikan teman-temannya perlahan meninggal satu per satu.</p>
+                            <a href="survey.html" class="btn btn-primary mt-3">Isi Survey</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/31/6f/23/316f23205ffa35ddfc4ebd23d2d7b55b.jpg" class="card-img-top" alt="KnK">
+                        <div class="card-body">
+                            <h5 class="card-title">Koe no Katachi</h5>
+                            <p class="card-text">Koe no Katachi menceritakan tentang Shoya Ishida, seorang remaja yang waktu SD sering melakukan bully kepada murid pindahan bernama Shoko Nishimaya yang ternyata tuna rungu. Karena suatu kejadian, Shoya ketahuan dan kemudian teman-teman sekelasnya pun mulai melakukan hal yang sama kepadanya, yaitu bullying. Setelah kejadian ini, waktunya dipercepat ke masa SMA dan Shoya mulai menutup hatinya dan selalu merasa bersalah. Tetapi suatu hari, Shoya kembali bertemu dengan Shoko. Pertemuan ini pun membuat diri Shoya mulai berubah.</p>
+                            <a href="survey.html" class="btn btn-primary mt-3">Isi Survey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-center py-3">
+                        <h3>Kontak Kami</h3>
+                        <p>Email: apace@samehadaku.com</p>
+                        <p>Phone: +62 87773238100</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-center py-3">
+                        <h3>Alamat</h3>
+                        <p>Angkringan Isekai, Jl. A. Yani No.392, Krajan, Baledono, Kec. Purworejo, Kabupaten Purworejo, Jawa Tengah 54118</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center py-3">
+                        <p>Copyright &copy; 2077 Samehadaku</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js
+    
