@@ -6,7 +6,6 @@
     <title>Survey</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Style for the rating stars */
         .rating {
             display: flex;
             flex-direction: row-reverse;
@@ -94,10 +93,8 @@
                 Rating: ${rating}
             `;
             
-            // Menampilkan alert dengan pesan terima kasih dan detail feedback
             alert(alertMessage);
     
-            // Menampilkan hasil feedback di halaman (opsional)
             document.getElementById('result').innerHTML = `
                 <h3>Terima kasih atas feedback Anda!</h3>
                 <p>Nama: ${name}</p>
